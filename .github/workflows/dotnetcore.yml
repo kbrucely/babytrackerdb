@@ -27,4 +27,4 @@ jobs:
       env:
         DB_CONNECTION_STRING: ${{ secrets.DB_CONNECTION_STRING }}
         DB_SCRIPTS_DIR: ${{ secrets.DB_SCRIPTS_DIR }}
-      run: dotnet ./babyfeedtrackerdb/bin/Release/netcoreapp3.1/babytrackerdb.dll
+      run: dotnet /home/runner/work/babytrackerdb/babytrackerdb/babyfeedtrackerdb/bin/Release/netcoreapp3.1/babyfeedtrackerdb.dll
