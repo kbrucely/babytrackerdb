@@ -3,3 +3,6 @@
     parent_name varchar(20),
     parent_email varchar(100)
 );
+
+ALTER TABLE baby_name
+ADD FOREIGN KEY (parent_id) REFERENCES parents(parent_id);
