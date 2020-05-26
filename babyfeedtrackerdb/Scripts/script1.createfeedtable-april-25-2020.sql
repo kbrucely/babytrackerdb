@@ -1,7 +1,8 @@
 ﻿CREATE TABLE baby_name (
     baby_id INT PRIMARY KEY IDENTITY (1, 1),
     first_name VARCHAR (50) NOT NULL,
-    last_name VARCHAR (50) NOT NULL
+    last_name VARCHAR (50) NOT NULL,
+    baby_birthday DATETIME
 );
 
 CREATE TABLE baby_feedings (
