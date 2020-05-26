@@ -1,7 +1,8 @@
 ﻿CREATE TABLE parents (
     parent_id INT PRIMARY KEY IDENTITY (1, 1),
-    parent_name varchar(20),
-    parent_email varchar(100)
+    parent_name varchar(20) NOT NULL,
+    parent_email varchar(100) NOT NULL,
+    parent_pass_hash BINARY(64) NOT NULL
 );
 
 ALTER TABLE baby_name
