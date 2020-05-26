@@ -6,5 +6,8 @@
 );
 
 ALTER TABLE baby_name
+ADD parent_id INT NOT NULL;
+
+ALTER TABLE baby_name
 ADD CONSTRAINT FK_parentid
 FOREIGN KEY (parent_id) REFERENCES parents(parent_id);
